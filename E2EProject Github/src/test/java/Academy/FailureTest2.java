@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -14,9 +15,10 @@ import resources.BaseTest;
 
 public class FailureTest2 extends BaseTest{
 	//public static Logger log  = LogManager.getLogger(base.class.getName());
-	@BeforeTest
+	@AfterTest
 	public void initilizedriver() throws IOException {
 		initializeDriver();
+		System.err.println("driver installed github sample");
 	}
 	
 	@Test
