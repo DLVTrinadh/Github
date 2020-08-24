@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="automation" >
+
+<!--<suite name="Parallel test suite" parallel="methods" thread-count="4">-->
+<listeners>
+<listener class-name="Academy.Listener"/> 
+</listeners>
+
+
+  <test name="FailureTest">
+    <classes>
+      <class name="Academy.FailureTest"/>
+       </classes>
+      </test>
+      <test name=" FailureTest2">
+    <classes>
+      <class name="Academy.FailureTest2"/>
+       </classes>
+      </test>
+      
+       <test name="Academy.homePage">
+    <classes>
+      <class name="Academy.homePage"/>
+       </classes>
+      
+     
+  </test> <!-- Test -->
+      
+      
+</suite> <!-- Suite -->

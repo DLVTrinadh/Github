@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Academy.Listener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="FailureTest(failed)">
+    <classes>
+      <class name="Academy.FailureTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initilizedriver"/>
+          <include name="basepagenavigation"/>
+        </methods>
+      </class> <!-- Academy.FailureTest -->
+    </classes>
+  </test> <!-- FailureTest(failed) -->
+  <test thread-count="5" verbose="0" name=" FailureTest2(failed)">
+    <classes>
+      <class name="Academy.FailureTest2">
+        <methods>
+          <include name="initilizedriver"/>
+          <include name="dummy"/>
+        </methods>
+      </class> <!-- Academy.FailureTest2 -->
+    </classes>
+  </test> <!--  FailureTest2(failed) -->
+  <test thread-count="5" verbose="0" name="Academy.homePage(failed)">
+    <classes>
+      <class name="Academy.homePage">
+        <methods>
+          <include name="basepagenavigation"/>
+          <include name="teardown"/>
+          <include name="initilizedriver"/>
+        </methods>
+      </class> <!-- Academy.homePage -->
+    </classes>
+  </test> <!-- Academy.homePage(failed) -->
+</suite> <!-- Failed suite [Suite] -->
